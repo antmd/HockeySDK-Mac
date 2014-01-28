@@ -156,6 +156,20 @@
 		4DD13AF2162CA7C400BF15E8 /* BITSystemProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BITSystemProfile.h; path = BetaDistribution/BITSystemProfile.h; sourceTree = "<group>"; };
 		4DD13AF3162CA7C400BF15E8 /* BITSystemProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BITSystemProfile.m; path = BetaDistribution/BITSystemProfile.m; sourceTree = "<group>"; };
 		4DD13AF6162CAA2200BF15E8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		ED967735188724D600CC6257 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ED967737188724D600CC6257 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		ED967738188724D600CC6257 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		ED967739188724D600CC6257 /* Lion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Lion.xcconfig; sourceTree = "<group>"; };
+		ED96773A188724D600CC6257 /* Mavericks.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Mavericks.xcconfig; sourceTree = "<group>"; };
+		ED96773B188724D600CC6257 /* MountainLion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MountainLion.xcconfig; sourceTree = "<group>"; };
+		ED96773C188724D600CC6257 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		ED96773D188724D600CC6257 /* DebugLion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugLion.xcconfig; sourceTree = "<group>"; };
+		ED96773E188724D600CC6257 /* DebugMavericks.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugMavericks.xcconfig; sourceTree = "<group>"; };
+		ED96773F188724D600CC6257 /* DebugMountainLion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugMountainLion.xcconfig; sourceTree = "<group>"; };
+		ED967740188724D600CC6257 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ED967741188724D600CC6257 /* ReleaseLion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseLion.xcconfig; sourceTree = "<group>"; };
+		ED967742188724D600CC6257 /* ReleaseMavericks.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseMavericks.xcconfig; sourceTree = "<group>"; };
+		ED967743188724D600CC6257 /* ReleaseMountainLion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseMountainLion.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +266,7 @@
 		1EF09D801523574200067A5C = {
 			isa = PBXGroup;
 			children = (
+				ED967734188724D600CC6257 /* XcodeBuildConfigurations */,
 				1EF09DA81523579100067A5C /* Classes */,
 				1EF09DB71523579A00067A5C /* Resources */,
 				1E7FB96117D3F44100B7E10D /* Support */,
@@ -354,6 +369,36 @@
 				4D1F150F162D4A6F0047B9D9 /* BITSystemProfilePrivate.h */,
 			);
 			name = BetaDistribution;
+			sourceTree = "<group>";
+		};
+		ED967734188724D600CC6257 /* XcodeBuildConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				ED967735188724D600CC6257 /* .gitignore */,
+				ED967736188724D600CC6257 /* Abstract */,
+				ED96773D188724D600CC6257 /* DebugLion.xcconfig */,
+				ED96773E188724D600CC6257 /* DebugMavericks.xcconfig */,
+				ED96773F188724D600CC6257 /* DebugMountainLion.xcconfig */,
+				ED967740188724D600CC6257 /* Icon.png */,
+				ED967741188724D600CC6257 /* ReleaseLion.xcconfig */,
+				ED967742188724D600CC6257 /* ReleaseMavericks.xcconfig */,
+				ED967743188724D600CC6257 /* ReleaseMountainLion.xcconfig */,
+			);
+			name = XcodeBuildConfigurations;
+			path = ../../../../XcodeBuildConfigurations;
+			sourceTree = "<group>";
+		};
+		ED967736188724D600CC6257 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				ED967737188724D600CC6257 /* Common.xcconfig */,
+				ED967738188724D600CC6257 /* Debug.xcconfig */,
+				ED967739188724D600CC6257 /* Lion.xcconfig */,
+				ED96773A188724D600CC6257 /* Mavericks.xcconfig */,
+				ED96773B188724D600CC6257 /* MountainLion.xcconfig */,
+				ED96773C188724D600CC6257 /* Release.xcconfig */,
+			);
+			path = Abstract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,21 +562,21 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1E7FB95D17D3F36B00B7E10D /* Debug */ = {
+		1E7FB95D17D3F36B00B7E10D /* DebugMavericks */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
-			name = Debug;
+			name = DebugMavericks;
 		};
-		1E7FB95E17D3F36B00B7E10D /* Release */ = {
+		1E7FB95E17D3F36B00B7E10D /* ReleaseMavericks */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
-			name = Release;
+			name = ReleaseMavericks;
 		};
-		1EF09D9F1523574200067A5C /* Debug */ = {
+		1EF09D9F1523574200067A5C /* DebugMavericks */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E7FB96217D3F45200B7E10D /* buildnumber.xcconfig */;
 			buildSettings = {
@@ -564,9 +609,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
-			name = Debug;
+			name = DebugMavericks;
 		};
-		1EF09DA01523574200067A5C /* Release */ = {
+		1EF09DA01523574200067A5C /* ReleaseMavericks */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E7FB96217D3F45200B7E10D /* buildnumber.xcconfig */;
 			buildSettings = {
@@ -592,11 +637,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
 			};
-			name = Release;
+			name = ReleaseMavericks;
 		};
-		1EF09DA21523574200067A5C /* Debug */ = {
+		1EF09DA21523574200067A5C /* DebugMavericks */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Anthony Dervish";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -609,15 +656,18 @@
 					"$(inherited)",
 					../Vendor/CrashReporter,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = framework;
 			};
-			name = Debug;
+			name = DebugMavericks;
 		};
-		1EF09DA31523574200067A5C /* Release */ = {
+		1EF09DA31523574200067A5C /* ReleaseMavericks */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: Anthony Dervish";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -630,11 +680,12 @@
 					"$(inherited)",
 					../Vendor/CrashReporter,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = framework;
 			};
-			name = Release;
+			name = ReleaseMavericks;
 		};
 /* End XCBuildConfiguration section */
 
@@ -642,29 +693,29 @@
 		1E7FB95F17D3F36B00B7E10D /* Build configuration list for PBXAggregateTarget "HockeySDK Documentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E7FB95D17D3F36B00B7E10D /* Debug */,
-				1E7FB95E17D3F36B00B7E10D /* Release */,
+				1E7FB95D17D3F36B00B7E10D /* DebugMavericks */,
+				1E7FB95E17D3F36B00B7E10D /* ReleaseMavericks */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ReleaseMavericks;
 		};
 		1EF09D851523574200067A5C /* Build configuration list for PBXProject "HockeySDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EF09D9F1523574200067A5C /* Debug */,
-				1EF09DA01523574200067A5C /* Release */,
+				1EF09D9F1523574200067A5C /* DebugMavericks */,
+				1EF09DA01523574200067A5C /* ReleaseMavericks */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ReleaseMavericks;
 		};
 		1EF09DA11523574200067A5C /* Build configuration list for PBXNativeTarget "HockeySDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EF09DA21523574200067A5C /* Debug */,
-				1EF09DA31523574200067A5C /* Release */,
+				1EF09DA21523574200067A5C /* DebugMavericks */,
+				1EF09DA31523574200067A5C /* ReleaseMavericks */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ReleaseMavericks;
 		};
 /* End XCConfigurationList section */
 	};
